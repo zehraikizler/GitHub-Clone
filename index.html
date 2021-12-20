@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>zehraikizler (Zehra İkizler)</title>
+    <link rel="shortcut icon" href="img/github.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@100&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <header
+      class="navbar navbar-expand-lg navbar-dark bg-dark"
+      style="background-color: #161B22 !important;"
+    >
+      <div class="container-fluid mx-3 my-1">
+        <a class="navbar-brand" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            fill="currentColor"
+            class="bi bi-github"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+            />
+          </svg>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div>
+            <form
+              class="d-flex rounded"
+              style="border: 0.7px solid rgb(98, 98, 98); background-color: rgb(13, 17, 23);"
+            >
+              <input
+                class="form-control ms-2 me-5 pe-3 p-0 fw-bold bg-transparent border-0"
+                style="font-size: 12px;"
+                type="search"
+                placeholder="Search or jump to..."
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-secondary p-0 m-1"
+                style="width: 25px; height: 20px; font-size: 13px;"
+                type="submit"
+              >
+                /
+              </button>
+            </form>
+          </div>
+          <ul class="navbar-nav ms-2 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">
+                <small>Pull request</small>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">
+                <small>Isues</small>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">
+                <small>Marketplace</small>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">
+                <small>Explore</small>
+              </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item pt-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="white"
+                class="bi bi-bell"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
+                />
+              </svg>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  style="color: whitesmoke;"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-plus"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                    />
+                  </svg>
+                </button>
+                <div
+                  class="dropdown-menu bg-dark"
+                  style="font-size: 12px;"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <a class="dropdown-item text-secondary" href="#"
+                    >New repository</a
+                  >
+                  <a class="dropdown-item text-secondary" href="#"
+                    >Import repository</a
+                  >
+                  <a class="dropdown-item text-secondary" href="#">New gist</a>
+                  <a class="dropdown-item text-secondary" href="#"
+                    >New organization</a
+                  >
+                  <a class="dropdown-item text-secondary" href="#"
+                    >New project</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown d-inline-block">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  style="color: whitesmoke;"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="img/profil.jpg"
+                    class="rounded-circle"
+                    width="25px;"
+                    alt="profil-photo"
+                  />
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action1</a>
+                  <a class="dropdown-item" href="#">Another action1</a>
+                  <a class="dropdown-item" href="#">Something else here1</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand navbar-dark bottom-line" id="nav">
+      <div class="container">
+        <a class="navbar-brand me-5 pe-5 d-none d-lg-block" href="#">
+          <div class="profil-logo" style="display: none;">
+            <ul class="p-0 m-0" style="list-style-type: none; display: flex;">
+              <li>
+                <img
+                  src="img/profil.jpg"
+                  class="rounded-circle me-2"
+                  style="width: 30px;"
+                  alt="profil-photo"
+                />
+              </li>
+              <li>
+                <span class="login" style="font-size: 12px;"></span>
+              </li>
+            </ul>
+          </div>
+          <div style="width: 200px;"></div>
+        </a>
+
+        <div class="navbar-collapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="#">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-book me-1 mb-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"
+                    />
+                  </svg>
+                </span>
+                <small>Overview</small>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="#">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-journal-bookmark me-1 mb-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"
+                    />
+                    <path
+                      d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+                    />
+                    <path
+                      d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+                    />
+                  </svg>
+                </span>
+                <small>Repositories</small>
+                <span class="repositories-length navbar-number"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="#">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-window-sidebar me-1 mb-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.5 4a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1zm2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm1 .5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z"
+                    />
+                    <path
+                      d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v2H1V3a1 1 0 0 1 1-1h12zM1 13V6h4v8H2a1 1 0 0 1-1-1zm5 1V6h9v7a1 1 0 0 1-1 1H6z"
+                    />
+                  </svg>
+                </span>
+                <small>Projects</small>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="#">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-box me-1 mb-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"
+                    />
+                  </svg>
+                </span>
+                <small>Packages</small>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-1" href="#">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-star me-1 mb-1"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"
+                    />
+                  </svg>
+                </span>
+                <small>Stars</small>
+                <span class="stars-length navbar-number"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--Content-->
+
+    <div class="container">
+      <div class="row">
+        <!--left bar-->
+        <div class="col-3" style="color:darkgray;">
+          <div>
+            <div class="d-flex justify-content-center">
+              <img
+                src="img/profil.jpg"
+                class="rounded-circle"
+                style="width: 100%; margin-top: -10px; z-index: 1;"
+                alt="profil-photo"
+              />
+            </div>
+            <p class="name p-0 fw-bold mt-4 mb-0" style="font-size: 26px;"></p>
+            <p
+              class="login p-0 fw-lighter text-secondary"
+              style="font-size: 20px;"
+            ></p>
+            <p class="biyografi"></p>
+            <button class="btn btn-sm edit-btn w-100 me-1">Edit profile</button>
+            <div class="my-3">
+              <a class="follow-link" href="#">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-people"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                    />
+                  </svg>
+                </span>
+                <span class="followers follow"></span>
+                <span>followers</span>
+              </a>
+              <a class="follow-link" href="#">
+                <span class="following follow"></span>
+                <span>following</span>
+              </a>
+            </div>
+            <div>
+              <a class="location-text d-block" href="#">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-geo-alt"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+                    />
+                    <path
+                      d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                    />
+                  </svg>
+                </span>
+                <span class="location"></span>
+              </a>
+              <a class="location-text d-flex" href="#">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-link-45deg"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"
+                    />
+                    <path
+                      d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"
+                    />
+                  </svg>
+                </span>
+                <span class="share ms-1"></span>
+              </a>
+            </div>
+            <div class="organization mt-3 pt-3">
+              <span class="d-block my-2">Organization</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  fill="gray"
+                  class="bi bi-app"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="35"
+                  height="35"
+                  fill="gray"
+                  class="bi bi-app"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!--right bar-->
+        <div class="col-9" style="color: lightgray;">
+          <div class="d-flex space-between mt-4">
+            <span style="font-size: 14px;">Popular repositories</span>
+            <span class="ms-auto p-0 text-secondary" style="font-size: 12px;"
+              >Customize your pins</span
+            >
+          </div>
+          <!--popular repositories-->
+          <div class="rowspapen mt-1"></div>
+
+          <div class="d-flex space-between align-items-center mt-4">
+            <span style="font-size: 14px;"
+              >176 contributions in the last year</span
+            >
+            <span class="ms-auto">
+              <div class="dropdown">
+                <a
+                  class="btn dropdown-toggle"
+                  href="#"
+                  style="color: rgb(190, 190, 190); font-size: 12px;"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Contribution settings
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </span>
+          </div>
+
+          <div class="boxs-container px-4">
+            <div class="row">
+              <div
+                class="col-1 days d-flex align-items-end flex-column pt-1 pe-0"
+              >
+                <div class="mt-4 mb-3">Mon</div>
+                <div class="mb-3">Wed</div>
+                <div>Fri</div>
+              </div>
+              <div class="col-11">
+                <div class="months ps-1">
+                  <span>Dec</span>
+                  <span>Jan</span>
+                  <span>Feb</span>
+                  <span>Mar</span>
+                  <span>Apr</span>
+                  <span>May</span>
+                  <span>Jun</span>
+                  <span>Jul</span>
+                  <span>Aug</span>
+                  <span>Sep</span>
+                  <span>Oct</span>
+                  <span>Nov</span>
+                </div>
+                <div id="boxs"></div>
+              </div>
+              <div class="footer-box col-12 d-flex space-between mt-2 ms-5">
+                <span>Learn how we count contributions</span>
+                <span class="ms-auto p-0 pe-5"
+                  >Less <span class="ms-1" id="box"></span> More</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex space-between mt-4" style="font-size: 14px;">
+            <span>Contribution activity</span>
+            <span class="ms-auto p-0 text-secondary">
+              <button class="btn btn-primary btn-sm mt-2 ps-2 pe-5">
+                2021
+              </button>
+            </span>
+          </div>
+
+          <div class="row">
+            <div class="col-10 mb-1">
+              <div class="d-flex align-items-center" style="font-size: 12px;">
+                <span class="me-1">December</span>
+                <span style="color: #8B949E;">2021</span>
+                <div class="line ms-2"></div>
+              </div>
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button contribution-title pb-0"
+                      style=" background-color: rgb(13, 17, 23) !important;"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Created 5 commits in 3 repositories
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body row">
+                      <div class="col-12">
+                        <div class="row d-flex align-items-center">
+                          <div class="col-9 mb-1">
+                            <a class="contribution-link" href="#"
+                              >zehraikizler/instagram-clone</a
+                            >
+                            <span class="contribution-commits" class="ms-2"
+                              >2 commits</span
+                            >
+                          </div>
+                          <div class="col-3 mb-1">
+                            <div
+                              class="contribution-progress rounded-pill bg-success"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row d-flex align-items-center">
+                          <div class="col-9 mb-1">
+                            <a class="contribution-link" href="#"
+                              >zehraikizler/kodluyoruz-clone</a
+                            >
+                            <span class="contribution-commits" class="ms-2"
+                              >2 commits</span
+                            >
+                          </div>
+                          <div class="col-3 mb-1">
+                            <div
+                              class="contribution-progress rounded-pill bg-success"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="row d-flex align-items-center">
+                          <div class="col-9 mb-1">
+                            <a class="contribution-link" href="#"
+                              >zehraikizler/hi-kod-bootcamp</a
+                            >
+                            <span class="contribution-commits" class="ms-2"
+                              >1 commit</span
+                            >
+                          </div>
+                          <div class="col-3 mb-1">
+                            <div
+                              class="contribution-progress rounded-pill bg-success"
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button contribution-title pb-0"
+                      style=" background-color: rgb(13, 17, 23) !important;"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="true"
+                      aria-controls="collapseTwo"
+                    >
+                      Created 2 repositories
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div class="col-12 mb-1">
+                        <div
+                          class="row d-flex align-items-center created-repositories"
+                        >
+                          <div class="col-9">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-journal-bookmark me-1 mb-1"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"
+                                />
+                                <path
+                                  d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+                                />
+                                <path
+                                  d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+                                />
+                              </svg>
+                            </span>
+                            <a class="contribution-link" href="#"
+                              >zehraikizler/hi-kodbootcamp</a
+                            >
+                          </div>
+                          <div class="col-2">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                fill="currentColor"
+                                class="mb-1 bi bi-circle-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <circle cx="8" cy="8" r="8" />
+                              </svg>
+                            </span>
+                            <span>HTML</span>
+                          </div>
+                          <div class="col-1">
+                            <span>Dec 2</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-1">
+                        <div
+                          class="row d-flex align-items-center created-repositories"
+                        >
+                          <div class="col-9">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-journal-bookmark me-1 mb-1"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"
+                                />
+                                <path
+                                  d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+                                />
+                                <path
+                                  d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+                                />
+                              </svg>
+                            </span>
+                            <a class="contribution-link" href="#"
+                              >zehraikizler/kodluyoruz-clone</a
+                            >
+                          </div>
+                          <div class="col-2">
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="13"
+                                height="13"
+                                fill="currentColor"
+                                class="mb-1 bi bi-circle-fill"
+                                viewBox="0 0 16 16"
+                              >
+                                <circle cx="8" cy="8" r="8" />
+                              </svg>
+                            </span>
+                            <span>HTML</span>
+                          </div>
+                          <div class="col-1">
+                            <span>Dec 7</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <button class="activity-btn btn btn-sm mt-4 p-2 w-100">
+                  Show more activity
+                </button>
+                <p class="activity-text my-4">
+                  Seeing something unexpected? Take a look at the
+                  <a class="activity-link" href="#">GitHub profile guide</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-5"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container">
+      <div>
+        <img src="img/github.svg" alt="logo" />
+        <span>© 2021 GitHub, Inc.</span>
+      </div>
+      <ul>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Secutiry</a></li>
+        <li><a href="#">Status</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Contact GitHub</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">Training</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
