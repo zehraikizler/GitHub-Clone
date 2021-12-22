@@ -71,8 +71,8 @@ function githubAllRepositories() {
                                         <a class="card-title text-primary fw-bold" href="${
                                           githubRepositories[i].html_url
                                         }" target="_blank">${
-          githubRepositories[i].name
-        }</a>
+                                          githubRepositories[i].name
+                                        }</a>
                                         <span class="conditions ms-auto rounded-pill">${
                                           githubRepositories[i].visibility
                                         }</span>
@@ -211,3 +211,10 @@ for (let i = 0; i < 5; i++) {
 
 let box = document.getElementById("box");
 box.appendChild(fiveBox);
+
+// footer tarih alma
+
+let date = document.querySelector(".date");
+
+let year = new Date();
+date.innerHTML = year.getFullYear();
