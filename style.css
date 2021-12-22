@@ -9,6 +9,10 @@ body {
   width: 100%;
 }
 
+header{
+  background-color: #161B22 !important;
+}
+
 .navbar {
   padding: 5px 0px;
 }
@@ -30,6 +34,19 @@ body {
   padding: 2px 5px 2px 4px;
   border-radius: 10px;
   font-size: 12px;
+}
+
+.search{
+  border: 0.001rem solid rgb(46, 46, 46); 
+  background-color: rgb(13, 17, 23);
+}
+
+.search-input{
+  font-size: 13px;
+}
+
+.search-input:focus{
+  width: 300px;
 }
 
 .edit-btn {
