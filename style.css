@@ -30,7 +30,7 @@ header {
 }
 
 .navbar-number {
-  background-color: rgb(56, 55, 55);
+  background-color: rgb(110, 118, 129, 0.4);
   padding: 2px 5px 2px 4px;
   border-radius: 10px;
   font-size: 12px;
@@ -116,6 +116,14 @@ header {
   overflow-x: auto;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.navbar-link {
+  color: #c9d1d9 !important;
+}
+
+.active-link {
+  border-bottom: 2px solid rgb(233, 102, 69);
 }
 
 .card {

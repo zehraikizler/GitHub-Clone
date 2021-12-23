@@ -160,6 +160,7 @@ function scrollFunction() {
   } else {
     nav.style.position = "relative";
     nav.style.zIndex = "-1";
+    nav.classList.add("pt-4");
     document.querySelector(".profil-logo").style.display = "none";
   }
 }
