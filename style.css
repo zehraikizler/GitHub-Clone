@@ -9,8 +9,8 @@ body {
   width: 100% !important;
 }
 
-header{
-  background-color: #161B22 !important;
+header {
+  background-color: #161b22 !important;
 }
 
 .navbar {
@@ -36,16 +36,16 @@ header{
   font-size: 12px;
 }
 
-.search{
-  border: 0.001rem solid rgb(46, 46, 46); 
+.search {
+  border: 0.001rem solid rgb(46, 46, 46);
   background-color: rgb(13, 17, 23);
 }
 
-.search-input{
+.search-input {
   font-size: 13px;
 }
 
-.search-input:focus{
+.search-input:focus {
   width: 300px;
 }
 
@@ -111,19 +111,12 @@ header{
   font-weight: bold;
 }
 
-.top-bar{
+.top-bar {
   width: 100% !important;
   overflow-x: auto;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-
-/* .rowspapen {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 49.5% 49.5%;
-} */
-
 
 .card {
   border: 0.001rem solid rgb(49, 49, 49);
@@ -185,7 +178,7 @@ header{
   background-color: rgb(13, 17, 23);
 }
 
-#boxs{
+#boxs {
   width: 50rem !important;
   overflow-x: auto;
   white-space: nowrap;
