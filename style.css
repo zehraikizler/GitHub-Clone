@@ -6,7 +6,7 @@
 
 body {
   background-color: rgb(13, 17, 23);
-  width: 100%;
+  width: 100% !important;
 }
 
 header{
@@ -111,11 +111,19 @@ header{
   font-weight: bold;
 }
 
-.rowspapen {
+.top-bar{
+  width: 100% !important;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* .rowspapen {
   width: 100%;
   display: grid;
   grid-template-columns: 49.5% 49.5%;
-}
+} */
+
 
 .card {
   border: 0.001rem solid rgb(49, 49, 49);
@@ -158,8 +166,30 @@ header{
   border: 0.001rem solid rgb(49, 49, 49);
   border-radius: 6px;
   padding: 10px;
-  overflow-x: hidden;
-  width: 100%;
+  width: 98% !important;
+  overflow-x: scroll;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 10px;
+  background-color: #eaeaea;
+  border-left: 1 solid rgb(240, 232, 232);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(13, 17, 23);
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(13, 17, 23);
+}
+
+#boxs{
+  width: 50rem !important;
+  overflow-x: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .months,

@@ -66,6 +66,8 @@ function githubAllRepositories() {
         }
 
         let div = document.createElement("div");
+        div.classList.add('col-12');
+        div.classList.add('col-lg-6');
         div.innerHTML = `<div class="card d-flex flex-column mb-2 me-2 p-3">
                                     <div class="d-flex justify-content-between mb-2">
                                         <a class="card-title text-primary fw-bold" href="${
@@ -153,9 +155,11 @@ function scrollFunction() {
     nav.style.top = "0";
     nav.style.backgroundColor = "rgb(13, 17, 23)";
     nav.style.marginTop = "0px";
+    nav.style.zIndex = "999";
     document.querySelector(".profil-logo").style.display = "block";
   } else {
     nav.style.position = "relative";
+    nav.style.zIndex = "-1";
     document.querySelector(".profil-logo").style.display = "none";
   }
 }
